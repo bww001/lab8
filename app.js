@@ -12,6 +12,7 @@ var index = require('./routes/index');
 
 // Example route
 // var user = require('./routes/user');
+var tasks = require('./routes/tasks');
 
 var app = express();
 
@@ -37,8 +38,8 @@ if ('development' == app.get('env')) {
 
 // Add routes here
 app.get('/', index.view);
-app.get('/tasks', tasks.view);
-app.post('/addTask', tasks.addTask);
+//app.get('/tasks', tasks.view);
+//app.post('/addTask', tasks.addTask);
 
 
 // Example route
